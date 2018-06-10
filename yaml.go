@@ -15,6 +15,9 @@ import (
 	"sync"
 )
 
+// DefaultMapType contains the type that YAML maps are decoded to
+var DefaultMapType = &defaultMapType
+
 // MapSlice encodes and decodes as a YAML map.
 // The order of keys is preserved when encoding and decoding.
 type MapSlice []MapItem
